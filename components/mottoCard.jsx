@@ -6,7 +6,7 @@ function MottoCard({ HeroSVG, title, body }) {
       <div className="my-auto basis-1/5 mx-auto ">
         <HeroSVG />
       </div>
-      <div className="my-auto basis-4/5">
+      <div className="my-auto basis-4/5 ">
         <div className="text-xl font-semibold">{title}</div>
         <div>{body}</div>
       </div>

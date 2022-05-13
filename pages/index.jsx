@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import MottoCard from "../components/mottoCard";
 const Home = () => (
-  <>
-    <div className="bg-purple-300 flex flex-col  lg:flex-row">
-      <div className="py-20 mx-2 lg:mx-10">
-        <div className="text-5xl font-bold">Welcome to Tecna</div>
+  <div className="mb-20">
+    <div className="bg-purple-300 flex flex-col lg:flex-row">
+      <div className="py-20 mx-2 lg:mx-10 my-auto">
+        <div className="text-5xl font-semibold ">Welcome to Tecna</div>
         <div className="text-xl">
           An organization dedicated to making rich, complete, fully open-sourced
           applications.
@@ -82,7 +82,7 @@ const Home = () => (
         <div className="my-5 flex flex-col lg:flex-row gap-5">
           <MottoCard
             title="Free Open-Sourced Software doesn't have to look bad."
-            body="We believe that software needs to look excellent and perform even better in order for a consumer to trust you enough to install it on their computers. "
+            body="We believe that FOSS doesn't need to look bad in order to perform well, or perform bad in order to look good. We use a bare-bones stack without Electron so performant apps are produced. "
             HeroSVG={() => (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -123,7 +123,7 @@ const Home = () => (
         </div>
       </div>
     </div>
-  </>
+  </div>
 );
 
 export default Home;
