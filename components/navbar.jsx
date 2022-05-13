@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Navbar() {
   return (
-    <div class="navbar bg-base-100 filter drop-shadow-xl rounded-lg ">
+    <div class="navbar  bg-base-100 filter drop-shadow-xl rounded-lg ">
       <div class="navbar-start">
         <div class="dropdown">
           <label tabindex="0" class="btn btn-ghost btn-circle">
@@ -27,7 +27,9 @@ function Navbar() {
             class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>Homepage</a>
+              <Link href="/">
+                <a>Homepage</a>
+              </Link>
             </li>
             <li>
               <a>Portfolio</a>
@@ -39,7 +41,7 @@ function Navbar() {
         </div>
       </div>
       <div class="navbar-center">
-        <Link href={'/'}>
+        <Link href={"/"}>
           <a class="btn btn-ghost normal-case text-xl">Tecna</a>
         </Link>
       </div>
