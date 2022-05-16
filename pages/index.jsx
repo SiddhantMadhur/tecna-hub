@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import MottoCard from "../components/mottoCard";
+import SlimProductCard from "../components/slimProductCard";
+
+
 const Home = () => (
   <div className="mb-20">
     <div className="bg-purple-300 flex flex-col lg:flex-row">
@@ -34,7 +37,7 @@ const Home = () => (
     </div>
     <div className="">
       <div className="my-5 mx-2 lg:mx-10">
-        <div className="text-5xl text-center py-3">Our Idealogy</div>
+        <div className="text-5xl font-bold text-center py-3">Our Idealogy</div>
         <div className="flex flex-col lg:flex-row gap-5">
           <MottoCard
             title={"Software should be honest."}
@@ -121,6 +124,21 @@ const Home = () => (
             )}
           />
         </div>
+      </div>
+    </div>
+    <div className="bg-purple-300 my-4 py-5">
+      <div className="text-5xl font-bold text-center">
+        Products
+      </div>
+      <div className="flex flex-row flex-wrap justify-center mx-3 lg:mx-10">
+        <SlimProductCard></SlimProductCard>
+        <SlimProductCard title="Sid's Password Manager"></SlimProductCard>
+        <SlimProductCard title="Sid's Password Manager"></SlimProductCard>
+        <SlimProductCard title="Sid's Password Manager"></SlimProductCard>
+        <SlimProductCard title="Sid's Password Manager"></SlimProductCard>
+        <SlimProductCard title="Sid's Password Manager"></SlimProductCard>
+        <SlimProductCard title="Sid's Password Manager"></SlimProductCard>
+        <SlimProductCard title="Sid's Password Manager"></SlimProductCard>
       </div>
     </div>
   </div>
